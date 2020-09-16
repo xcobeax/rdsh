@@ -4,5 +4,5 @@ const Route = express.Router()
 const noteController = require('../controllers/controllers')
 
 Route
-  .get('/cat', noteController.getNote)
+  .get('/dashboard', noteController.getNote)
 module.exports = Route
