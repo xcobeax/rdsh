@@ -3,7 +3,7 @@ require('dotenv').config() // Initialize dotenv config
 const express = require('express') // Import express
 const bodyParser = require('body-parser') // Import body-parses
 const app = express() // Create method
-const port = process.env.PORT // Default PORT
+const port = process.env.PORT || 9999 // Default PORT
 
 const userRoute = require('./src/routes/routes')
 
