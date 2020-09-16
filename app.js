@@ -8,7 +8,7 @@ const port = process.env.PORT || 9999 // Default PORT
 const userRoute = require('./src/routes/routes')
 
 app.listen(port, () => {
-  console.log(`\n GASSSSSSS AKU DI PORT : ${port} MASS!!!!\n`)
+  console.log(`\n Running On Port : ${port}\n`)
 }) // Create listening app
 
 app.use(bodyParser.json()) // Body parse json
