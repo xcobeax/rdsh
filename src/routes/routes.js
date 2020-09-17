@@ -1,9 +1,9 @@
 const express = require('express')
 const Route = express.Router()
 
-const noteController = require('../controllers/controllers')
+const controller = require('../controllers/controllers')
 
 Route
-  .get('/dashboard', noteController.getDashboard)
-  .get('/dashboard/csv', noteController.getCsv)
+  .get('/dashboard', controller.getDashboard)
+  .get('/dashboard/csv', controller.getCsv)
 module.exports = Route
